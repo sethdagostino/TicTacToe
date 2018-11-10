@@ -1,3 +1,10 @@
+/* Container component that includes a Banner announcing things about the game,
+ * a table of Cells for representing the X's and O's, and a reset button. This is
+ * the only stateful component. I use logic from TicTacToeGridLogic to do functions
+ * related to a tic tac toe grid that weren't limited to the display, that way that
+ * code could be reused. 
+*/
+
 import React from 'react';
 import Banner from '../components/Banner';
 import Cell from './Cell';

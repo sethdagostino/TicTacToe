@@ -1,3 +1,6 @@
+//Presentational component to display announcements of the game, like whose
+//turn it is, who won, when it is game over, etc.
+
 import React from 'react';
 import { bannerStyle } from '../styles/Styles'
 

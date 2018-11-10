@@ -1,3 +1,4 @@
+//Exported style objects for inline styling different components
 
 export const symbolStyle = {
     display: "block",
