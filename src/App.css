@@ -1,7 +1,84 @@
-.App {
+
+table {
+  width: 90%;
+  max-width: 400px;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+td {
+  width: 33.333%;
+  max-height: 33.333%;
+  border: 6px solid #222;
   text-align: center;
+  vertical-align: middle;
+  position: relative;
+}
+td::after {
+  content: '';
+  display: block;
+  margin-top: 100%;
+}
+td {
+  border: 6px solid #222;
+}
+td:first-of-type {
+  border-left-color: transparent;
+  border-top-color: transparent;
+}
+td:nth-of-type(2) {
+  border-top-color: transparent;
+}
+td:nth-of-type(3) {
+  border-right-color: transparent;
+  border-top-color: transparent;
+}
+tr:nth-of-type(3) td {
+  border-bottom-color: transparent;
 }
 
+.centered-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+}
+
+#resetButton {
+    color: #0099ff;
+    background-color: white;
+    border: 2px solid #0099ff;
+    font-size: 1.5em;
+    font-family: "Segoe UI" sans-serif;
+    width: 90%;
+    border-radius: 4px;
+    margin: 30px auto;
+    transition-duration: 0.4s;
+}
+
+#resetButton:hover {
+    color: white;
+    background-color: #0099ff;
+}
+
+#banner {
+    color: #0099ff;
+    width: 125%;
+    border-radius: 8px;
+    border: 2px solid #0099ff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 450px) {
+    #banner {
+        width: 90%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
+/*
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
@@ -30,3 +107,4 @@
     transform: rotate(360deg);
   }
 }
+*/
